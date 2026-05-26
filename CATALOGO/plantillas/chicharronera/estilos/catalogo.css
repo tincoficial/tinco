@@ -1,0 +1,124 @@
+
+/* =========================================
+   3. CATALOGO DE PRODUCTOS
+========================================= */
+.products-container { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 1.5rem; 
+}
+@media (min-width: 650px) { .products-container { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 950px) { .products-container { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1200px) { .products-container { grid-template-columns: repeat(4, 1fr); } }
+
+
+
+/* Botón para abrir el modal de detalles del producto con diseño de cristal esmerilado, bordes suaves, transición para interactividad y un efecto de hover que resalta el botón */
+.btn-open { 
+    width: 100%; 
+    padding: 12px; 
+    background: transparent; 
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-color); 
+    border-radius: var(--border-radius-md); 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.btn-open:hover { 
+    background: var(--primary-color); 
+    color: white; 
+    transform: translateY(-2px); /* Un pequeño levantamiento para mayor sensación de botón */
+}
+
+/* Efecto al hacer clic (Active) */
+.btn-open:active { 
+    transform: translateY(0); /* Vuelve a su posición original al presionar */
+}
+
+.product-card { 
+    background: var(--surface-color); 
+    border: var(--border-glass);
+    border-radius: var(--border-radius-lg); 
+    overflow: hidden; 
+    transition: var(--transition); 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    cursor: pointer; 
+    isolation: isolate;
+    
+}
+
+
+
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, var(--resaltado), transparent 70%);
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.product-card:hover::before { opacity: 1; }
+
+.img-container {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+    background-color: #222;
+}
+
+.product-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.7s ease; 
+}
+.product-card:hover .product-img { transform: scale(1.08); }
+
+/* Badges para destacar productos (Nuevo, Promoción, Más Vendido)*/
+.badge { 
+    position: absolute; top: 15px; left: 15px; padding: 6px 14px; border-radius: 20px; 
+    font-size: 0.75rem; font-weight: 600; color: white; 
+    backdrop-filter: blur(5px); z-index: 2; text-transform: uppercase; letter-spacing: 1px;
+    background: rgba(100, 100, 100, 0.7);
+}
+.badge.nuevo { background: var(--accent-gold); color: white; }
+.badge.promocion { background: var(--accent-gold); color: white; }
+.badge.mas-vendido { background: var(--accent-gold); color: white; }
+
+
+
+
+.product-info { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+.product-title { font-family: var(--font-headings); font-size: 1.3rem; margin-bottom: 8px; color: var(--text-main); }
+.product-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+    
+    /* Configuración para navegadores modernos (estándar) */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    /* Primero el prefijo para WebKit */
+    -webkit-line-clamp: 2;
+    /* Luego la propiedad estándar */
+    line-clamp: 2; 
+}
+.product-price { font-size: 1.4rem; font-weight: 700; color: var(--accent-gold); margin-top: auto; margin-bottom: 15px; }

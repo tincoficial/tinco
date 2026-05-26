@@ -1,0 +1,32 @@
+
+/* TEMA CAFE */
+
+:root {
+    /* 1. Fondo principal: Un crema muy suave y relajante */
+    --bg-color: rgb(248, 244, 235);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.6); 
+    
+    /* 2. Color Primario: Un marrón sepia elegante (reemplaza al naranja/rojo) */
+    --primary-color: rgb(139, 115, 85);  
+    --primary-glow: rgb(100, 80, 60);      /* Sombra cálida y profunda */
+    --resaltado: rgba(139, 115, 85, 0.15); /* Efecto sutil */
+    
+    /* 3. Textos: Gris muy oscuro (casi negro) para legibilidad elegante */
+    --text-main: rgb(40, 35, 30);
+    --text-muted: #8c8275;
+    
+    /* 4. Acento: Un tono bronce para resaltar precios */
+    --accent-gold: rgb(160, 130, 90); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(139, 115, 85, 0.08); 
+    --border-glass: 1px solid rgba(139, 115, 85, 0.2); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

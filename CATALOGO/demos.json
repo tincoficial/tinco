@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estudio Jurídico",
+    "categoria": "servicios",
+     "imagen": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80",
+    "enlace": "/demo-abogado.html"
+  },
+  {
+    "id": 2,
+    "titulo": "Barbería Premium",
+    "categoria": "belleza",
+    "imagen": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80",
+    "enlace": "/demo-barberia.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Chicharronera",
+    "categoria": "gastronomia",
+    "imagen": "imagenes/chicharronera.webp",
+    "enlace": "plantillas/chicharronera/index.html"
+  },
+  {
+    "id": 4,
+    "titulo": "Ferretería Express",
+    "categoria": "comercio",
+    "imagen": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
+    "enlace": "/demo-ferreteria.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Clínica Dental",
+    "categoria": "servicios",
+     "imagen": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80",
+    "enlace": "/demo-dental.html"
+  }
+]
