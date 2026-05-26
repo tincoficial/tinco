@@ -1,0 +1,246 @@
+
+/* =========================================
+    HEADER
+========================================= */
+.main-header { 
+    text-align: center; 
+    position: relative; 
+    padding-bottom: 3rem; 
+}
+
+/* Estilo para el banner con imagen de fondo y efecto de superposición */
+.banner { 
+    height: 45vh; 
+    min-height: 500px;
+    background: url('banner.jpg') center/cover no-repeat; 
+    position: relative; 
+    
+}
+
+/* Capa de superposición para mejorar la legibilidad del texto sobre la imagen */
+.banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,10,12,0.2) 40%, var(--bg-color) 80%);
+}
+
+/* Contenido del header (logo, título, descripción) */
+.header-content { 
+    position: relative; 
+    margin-top: -80px; 
+    z-index: 2; 
+    padding: 0 1.5rem; 
+}
+
+/* Estilo para el logo con efecto de cristal esmerilado y esquinas redondeadas */
+.logo { 
+    width: 120px; 
+    height: 120px; 
+  
+    border-radius: 16px; /* Cambiado de 50% a un valor menor para esquinas redondeadas */
+    margin: 0 auto 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 3.5rem; 
+    
+    overflow: hidden; /* Recorta la imagen siguiendo la nueva forma de las esquinas */
+}
+
+/* Asegura que la imagen del logo se ajuste correctamente dentro del contenedor con esquinas redondeadas */
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Estilo para el título del header con fuente elegante, tamaño grande y sombra para destacar sobre el fondo */
+.header-content h1 {
+    font-family: var(--font-headings);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+}
+
+/* Estilo para la descripción del header con un tamaño de fuente legible, color más suave y un ancho máximo para mejorar la lectura */
+.description { 
+    max-width: 600px; 
+    margin: 0 auto 20px; 
+    color: var(--text-muted); 
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contenedor para los badges de información (dirección, teléfono, redes sociales) con diseño flexible y centrado */
+/* Contenedor padre */
+.info-badges { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+/* Estilo para los badges */
+/* Tanto el div como el enlace comparten estas propiedades básicas */
+/* Modifica este bloque completo */
+.info-badge, a.info-badge {
+    background: var(--surface-glass); 
+    border: var(--border-glass);
+    backdrop-filter: blur(8px);
+    padding: 12px 20px;            /* Aumenté un poco el padding superior/inferior */
+    border-radius: 20px; 
+    font-size: 0.9rem;             /* Ligeramente más grande para mejor lectura */
+    color: var(--text-muted); 
+    transition: var(--transition);
+    
+    display: inline-flex;
+    flex-direction: column;        /* Mantiene el texto vertical */
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left;
+    white-space: normal; 
+    height: auto; 
+    text-decoration: none;
+}
+
+/* Añade esta regla nueva para que el icono y el texto dentro del enlace se vean perfectos */
+a.info-badge {
+    display: inline-flex;
+    flex-direction: column; /* Esto mantiene el orden: Icono + Texto + Small */
+    align-items: flex-start;
+}
+
+/* Efecto hover mejorado */
+a.info-badge:hover {
+    color: var(--primary-color); /* Cambia el color del texto al pasar el cursor */
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1); /* Ligero cambio de fondo */
+    transform: translateY(-2px);          /* Pequeño movimiento para indicar interacción */
+}
+
+
+/* 1. Asegura que el enlace sea un flex horizontal */
+a.info-badge.location-link {
+    display: inline-flex;
+    flex-direction: row;        /* CAMBIO: Esto pone el icono y el texto en fila */
+    align-items: center;        /* Alinea el icono y el texto verticalmente al centro */
+    text-align: left;
+}
+
+/* 2. Ajusta el contenedor del icono para darle espacio */
+a.info-badge.location-link svg {
+    margin-right: 8px;          /* Espacio entre el icono y el texto */
+    flex-shrink: 0;             /* Evita que el icono se aplaste si el texto es muy largo */
+}
+
+
+/* Contenedor para los enlaces de redes sociales con diseño flexible y centrado */
+.social-links a { 
+    display: inline-flex;      /* Alinea icono y texto horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    gap: 8px;                  /* Espacio entre icono y texto */
+    color: var(--text-main); 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: 500; 
+    transition: var(--transition);
+    border-bottom: 2px solid transparent; 
+}
+
+.social-links a:hover { 
+    color: var(--primary-color); 
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+
+
+
+/* =========================================
+   ACCIONES DEL HEADER (WhatsApp + Compartir)
+========================================= */
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Botón de WhatsApp estilo Minimalista */
+.btn-whatsapp-header { 
+    display: inline-block; 
+    background: transparent;
+    color: #1ebd57;
+    border: 1px solid #1ebd57;
+    text-decoration: none; 
+    padding: 10px 26px; 
+    border-radius: 30px; 
+    font-weight: 600; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+.btn-whatsapp-header:hover { 
+    background: #1ebd57;
+    color: #ffffff;
+    border-color: #1ebd57;
+    transform: translateY(-2px);
+}
+
+
+/* Botón de Compartir (Icono flecha) */
+.btn-share-header {
+    background: transparent;          /* Fondo transparente inicial */
+    border: 1px solid var(--primary-color); 
+    color: var(--primary-color);      /* Color del icono inicial */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;        /* Suaviza la transición */
+}
+
+/* Efecto Hover: Fondo se llena de color, el icono se vuelve blanco */
+.btn-share-header:hover {
+    background: var(--primary-color); /* Fondo del color del tema */
+    color: #ffffff;                  /* Icono blanco */
+    transform: translateY(-2px);      /* Pequeño salto hacia arriba */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+/* Efecto al presionar (Active) */
+.btn-share-header:active {
+    transform: translateY(0);
+}
+
+
+/* Estilos para el modal de compartir */
+.share-modal-content {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Siempre vertical */
+    align-items: center;
+    margin: auto;
+}
+
+/* Para que la imagen no se deforme */
+.share-modal-content img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+

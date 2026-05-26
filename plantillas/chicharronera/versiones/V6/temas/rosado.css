@@ -1,0 +1,31 @@
+
+/* ROSADO */
+:root {
+    /* 1. Fondo: Un rosa pálido muy sutil (casi blanco) */
+    --bg-color: rgb(255, 240, 245);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.6); 
+    
+    /* 2. Color Primario: Rosa "Berry" intenso para botones y acciones */
+    --primary-color: rgb(233, 30, 99);  
+    --primary-glow: rgb(180, 20, 80);      /* Sombra profunda y sofisticada */
+    --resaltado: rgba(233, 30, 99, 0.15); /* Efecto de luz rosa tenue */
+    
+    /* 3. Textos: Gris muy oscuro, casi negro, para contraste máximo */
+    --text-main: rgb(30, 20, 25);
+    --text-muted: #7d6b75;
+    
+    /* 4. Acento: Un tono frambuesa oscuro para precios y detalles */
+    --accent-gold: rgb(190, 40, 90); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(233, 30, 99, 0.1); 
+    --border-glass: 1px solid rgba(233, 30, 99, 0.2); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

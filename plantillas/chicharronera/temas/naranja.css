@@ -1,0 +1,32 @@
+
+
+/* TEMA NARANJA */
+:root {
+    /* 1. Fondo principal: Un tono crema/durazno muy suave para una transición cálida */
+    --bg-color: rgb(255, 247, 235);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.5); 
+    
+    /* 2. Color Primario: Naranja vibrante (Energético) */
+    --primary-color: rgb(255, 145, 0);  
+    --primary-glow: rgb(255, 165, 0);      /* Un tono de resplandor más dorado */
+    --resaltado: rgba(255, 145, 0, 0.2);   /* Efecto de luz naranja suave */
+    
+    /* 3. Textos */
+    --text-main: rgb(0, 0, 0);
+    --text-muted: #6b6b6b;
+    
+    /* 4. Acento: Un tono naranja quemado o bronce para profundidad */
+    --accent-gold: rgb(200, 100, 0); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(255, 145, 0, 0.15); 
+    --border-glass: 1px solid rgba(255, 145, 0, 0.3); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

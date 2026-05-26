@@ -1,0 +1,31 @@
+
+/* TEMA MORADO */
+:root {
+    /* 1. Fondo: Un tono lavanda muy claro, casi blanquecino */
+    --bg-color: rgb(245, 240, 250);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.6); 
+    
+    /* 2. Color Primario: Morado vibrante y eléctrico */
+    --primary-color: rgb(120, 80, 200);  
+    --primary-glow: rgb(80, 40, 140);      /* Sombra profunda y elegante */
+    --resaltado: rgba(120, 80, 200, 0.15); /* Efecto de luz morada suave */
+    
+    /* 3. Textos: Gris oscuro profundo para elegancia */
+    --text-main: rgb(25, 20, 35);
+    --text-muted: #7d6b8c;
+    
+    /* 4. Acento: Un tono violeta más oscuro para detalles */
+    --accent-gold: rgb(90, 50, 160); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(120, 80, 200, 0.1); 
+    --border-glass: 1px solid rgba(120, 80, 200, 0.2); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

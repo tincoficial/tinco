@@ -1,0 +1,31 @@
+
+/* TEMA ROJO */
+:root {
+
+    --bg-color: rgb(255, 235, 235);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.4); 
+    
+    /* 2. Color Primario: Rojo intenso/Carmesí vibrante */
+    --primary-color: rgb(220, 53, 69);  
+    --primary-glow: rgb(150, 20, 30);      /* Un tono de sombra más profundo */
+    --resaltado: rgba(220, 53, 69, 0.2);   /* Efecto de luz roja suave */
+    
+    /* 3. Textos */
+    --text-main: rgb(0, 0, 0);
+    --text-muted: #636e72;
+    
+    /* 4. Acento: Un tono rojo oscuro o terracota para equilibrio */
+    --accent-gold: rgb(180, 40, 50); 
+    
+    /* Efectos mantenidos para consistencia */
+    --shadow-glass: 0 8px 32px 0 rgba(220, 53, 69, 0.1); 
+    --border-glass: 1px solid rgba(220, 53, 69, 0.2); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

@@ -1,0 +1,32 @@
+
+
+/* AMARILLO*/
+:root {
+    /* 1. Fondo principal: Un amarillo mantequilla muy, muy claro y suave */
+    --bg-color: rgb(255, 252, 230);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.5); 
+    
+    /* 2. Color Primario: Amarillo vibrante/mostaza (Energía) */
+    --primary-color: rgb(199, 149, 0);  
+    --primary-glow: rgb(219, 139, 1);      /* Un resplandor más intenso */
+    --resaltado: rgba(255, 193, 7, 0.2);   /* Efecto de luz suave */
+    
+    /* 3. Textos: Usamos tonos oscuros para asegurar que resalten sobre el fondo amarillo */
+    --text-main: rgb(33, 33, 33);
+    --text-muted: #5d5d5d;
+    
+    /* 4. Acento: Un tono dorado o ámbar profundo para los precios */
+    --accent-gold: rgb(158, 119, 0); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(255, 193, 7, 0.15); 
+    --border-glass: 1px solid rgba(255, 193, 7, 0.3); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

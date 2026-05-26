@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Clandestino | Catálogo Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="banner">
+            <div class="overlay"></div>
+        </div>
+        <div class="header-content">
+            <div class="logo">🍔</div>
+            <h1>Sabor Clandestino</h1>
+            <p class="description">Las mejores hamburguesas y pizzas artesanales de la ciudad. Calidad que se nota en cada mordisco.</p>
+            
+            <div class="info-badges">
+                <span class="info-badge">🕒 Lun - Dom: 12:00 PM - 10:00 PM</span>
+                <span class="info-badge">📍 Av. Central #123, Managua</span>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
+            
+            <a href="https://wa.me/50581878263" target="_blank" class="btn-whatsapp-header">
+                Contáctanos por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <section class="controls-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar productos... (ej. Pizza, Hamburguesa)">
+        </div>
+        
+        <div class="categories-container" id="categoriesContainer">
+            </div>
+    </section>
+
+    <main class="products-container" id="productsContainer">
+        </main>
+
+    <button class="floating-cart-btn" id="floatingCartBtn" onclick="toggleCart()">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Pedido</h2>
+            <button class="close-btn" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalDisplay">C$ 0.00</span>
+            </div>
+            <button class="btn-send-order" onclick="sendWhatsAppOrder()">
+                Enviar pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="overlay-bg" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">✕</button>
+            <img src="" alt="Producto" id="modalImage" class="modal-image">
+            <div class="modal-body">
+                <h3 id="modalTitle">Nombre del Producto</h3>
+                <p id="modalDescription" class="modal-desc">Descripción</p>
+                <p id="modalPrice" class="modal-price">C$ 0.00</p>
+                
+                <div class="form-group">
+                    <label>Observaciones (Opcional):</label>
+                    <input type="text" id="modalNotes" placeholder="Ej. Sin cebolla, extra queso...">
+                </div>
+                
+                <div class="modal-actions">
+                    <div class="quantity-selector">
+                        <button onclick="changeModalQuantity(-1)">-</button>
+                        <span id="modalQuantity">1</span>
+                        <button onclick="changeModalQuantity(1)">+</button>
+                    </div>
+                    <button class="btn-add" onclick="addToCartFromModal()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

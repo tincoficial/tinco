@@ -1,0 +1,31 @@
+
+/* VERDE */
+:root {
+    /* 1. Fondo: Un tono verde menta muy suave y casi blanco */
+    --bg-color: rgb(238, 245, 240);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.6); 
+    
+    /* 2. Color Primario: Verde Jade / Esmeralda intenso */
+    --primary-color: rgb(46, 125, 50);  
+    --primary-glow: rgb(20, 60, 25);      /* Sombra profunda y natural */
+    --resaltado: rgba(46, 125, 50, 0.15); /* Efecto de luz verde suave */
+    
+    /* 3. Textos: Un gris verdoso muy oscuro para mantener la elegancia */
+    --text-main: rgb(20, 35, 25);
+    --text-muted: #6b7a6d;
+    
+    /* 4. Acento: Un verde oliva profundo para detalles */
+    --accent-gold: rgb(60, 90, 50); 
+    
+    /* Efectos */
+    --shadow-glass: 0 8px 32px 0 rgba(46, 125, 50, 0.1); 
+    --border-glass: 1px solid rgba(46, 125, 50, 0.2); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}

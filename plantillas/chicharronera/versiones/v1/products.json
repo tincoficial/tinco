@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Clásica Burger",
+        "price": 150,
+        "description": "Carne de res 150g, queso cheddar, lechuga, tomate y nuestra salsa secreta.",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80",
+        "category": "Hamburguesas",
+        "badge": "Más vendido"
+    },
+    {
+        "id": 2,
+        "name": "Doble Bacon Smash",
+        "price": 220,
+        "description": "Doble carne smash, doble queso, abundante tocino crujiente y cebolla caramelizada.",
+        "image": "https://images.unsplash.com/photo-1594212202905-2b02e7df6fce?auto=format&fit=crop&w=500&q=80",
+        "category": "Hamburguesas",
+        "badge": "Nuevo"
+    },
+    {
+        "id": 3,
+        "name": "Pizza Pepperoni Familiar",
+        "price": 350,
+        "description": "Masa artesanal, salsa pomodoro, extra queso mozzarella y pepperoni premium.",
+        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=80",
+        "category": "Pizzas",
+        "badge": ""
+    },
+    {
+        "id": 4,
+        "name": "Pizza Hawaiana",
+        "price": 320,
+        "description": "Jamón, piña fresca, queso mozzarella y un toque de orégano.",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80",
+        "category": "Pizzas",
+        "badge": "Promoción"
+    },
+    {
+        "id": 5,
+        "name": "Combo Pareja",
+        "price": 450,
+        "description": "2 Hamburguesas clásicas + 2 Papas fritas + 2 Refrescos de 12oz.",
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80",
+        "category": "Combos",
+        "badge": "Promoción"
+    },
+    {
+        "id": 6,
+        "name": "Cheesecake de Fresa",
+        "price": 90,
+        "description": "Delicioso pastel de queso bañado en mermelada de fresa casera.",
+        "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=500&q=80",
+        "category": "Postres",
+        "badge": ""
+    },
+    {
+        "id": 7,
+        "name": "Coca Cola 1L",
+        "price": 60,
+        "description": "Botella plástica helada de 1 litro.",
+        "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=80",
+        "category": "Bebidas",
+        "badge": ""
+    }
+]

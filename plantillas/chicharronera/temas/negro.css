@@ -1,0 +1,32 @@
+
+
+/* TEMA NEGRO*/ 
+:root {
+    /* 1. Fondo: Un gris muy claro, neutro y profesional */
+    --bg-color: rgb(240, 240, 240);           
+    --surface-color: rgb(255, 255, 255); 
+    --surface-glass: rgba(255, 255, 255, 0.7); 
+    
+    /* 2. Color Primario: Negro sólido para botones e interacción */
+    --primary-color: rgb(20, 20, 20);  
+    --primary-glow: rgb(0, 0, 0);      /* Sombra negra pura */
+    --resaltado: rgba(0, 0, 0, 0.1);   /* Un toque gris muy suave al resaltar */
+    
+    /* 3. Textos: Negro absoluto para máxima elegancia */
+    --text-main: rgb(0, 0, 0);
+    --text-muted: #555555; /* Un gris medio para descripciones */
+    
+    /* 4. Acento: Gris carbón para detalles secundarios */
+    --accent-gold: rgb(50, 50, 50); 
+    
+    /* Efectos: Bordes y sombras muy sutiles, tipo diseño de revista */
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.08); 
+    --border-glass: 1px solid rgba(0, 0, 0, 0.15); 
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    
+    --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    --font-headings: 'Montserrat', serif;
+    --font-body: 'Poppins', sans-serif;
+}
